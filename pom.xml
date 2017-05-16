@@ -8,13 +8,14 @@
     <artifactId>com.qoobico.remindme.server</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <spring-core.version>4.2.3.RELEASE</spring-core.version>
+        <spring-core.version>4.2.2.RELEASE</spring-core.version>
         <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
         <spring-data-jpa.version>1.9.0.RELEASE</spring-data-jpa.version>
         <hibernate-entitymanager.version>5.2.10.Final</hibernate-entitymanager.version>
         <postgresql.version>9.4-1203-jdbc4</postgresql.version>
         <commons-dbcp2.version>2.0</commons-dbcp2.version>
         <jta.version>1.1</jta.version>
+        <jackson-databind.version>2.5.3</jackson-databind.version>
     </properties>
     <packaging>war</packaging>
 
@@ -34,6 +35,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
+        </dependency>
+        <!--JSON Converter-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-databind.version}</version>
         </dependency>
         <!--DataBase-->
         <dependency>
