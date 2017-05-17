@@ -1,6 +1,7 @@
 package com.qoobico.remindme.server;
 
 import com.qoobico.remindme.server.config.WebConfig;
+import com.qoobico.remindme.server.repository.RemindRepository;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
